@@ -1,6 +1,6 @@
 rm -rf /opt/ANDRAX/zap
 
-wget https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.16.1_Linux.tar.gz
+wget https://github.com/zaproxy/zaproxy/releases/download/w2025-05-26/ZAP_WEEKLY_D-2025-05-26.zip
 
 if [ $? -eq 0 ]
 then
@@ -11,7 +11,7 @@ else
   exit 1
 fi
 
-tar -xvzf ZAP_2.16.1_Linux.tar.gz
+unzip ZAP_WEEKLY_D-2025-05-26.zip
 
 if [ $? -eq 0 ]
 then
@@ -22,7 +22,7 @@ else
   exit 1
 fi
 
-cp -Rf ZAP_2.16.1 /opt/ANDRAX/zap
+cp -Rf ZAP_D-2025-05-26/ /opt/ANDRAX/zap
 
 if [ $? -eq 0 ]
 then
